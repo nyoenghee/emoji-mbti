@@ -1,9 +1,12 @@
+$background : #F5F8FF;
+$black : #001254;
+
 button {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
-    background-color: red;
+    border: 1px solid $black;
+    background-color: $background;
     border-radius: toEm(30px);
     padding: toEm(8px) toEm(15px);
 }

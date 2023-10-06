@@ -1,18 +1,27 @@
 @import "./common/App";
-
+$background : #F5F8FF;
+$black : #001254;
 .section {
+    color: $black;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     &-main {
+        background-color: $background;
         height: 100vh;
+        background: url('https://media0.giphy.com/media/TGXoYOYmVQ9v6M3g1q/giphy.gif?cid=ecf05e47jmntt71g93odqqbpcrx0tchmv2kug22uvfwsk1ft&ep=v1_gifs_gifId&rid=giphy.gif&ct=e') center center/1000px no-repeat;
     }
     &-title {
-        font-size: 3vw;
+        font-size: toEm(30px);
+        position: fixed;
+        left: toEm(30px);
+        top: toEm(5px);
+        font-weight: 700;
     }
     &-desc {
-        margin-bottom: toEm(20px);
+        
+        margin-bottom: toEm(10px);
 
     }
 }
