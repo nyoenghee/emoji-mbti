@@ -1,0 +1,66 @@
+
+
+$regular : 400;
+$medium : 500;
+$bold : 700;
+$basefont : 'Be Vietnam Pro';
+
+@mixin defineFont($size,$weight,$letter-spacing,$line-height){
+    font-family: $basefont;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $letter-spacing;
+    line-height: $line-height;
+}
+.f-kv {
+    @include defineFont(1.5vw, $medium, -0.02em, 0.8);
+    // font-style: italic;
+    vertical-align: top;
+    @media screen and (min-width : 1600px) {
+        vertical-align: top;
+        @include defineFont(1.3rem, $medium, -0.02em, 0.8);
+    }
+
+    @media screen and (max-width : $breakpoint-tablet) {
+        vertical-align: top;
+        @include defineFont(2.2vw, $medium, -0.02em, 0.8);
+
+    }
+    @media screen and (max-width : $breakpoint-mobile) {
+        vertical-align: top;
+        @include defineFont(1.3rem, $medium, -0.02em, 0.8);
+
+    }
+}
+.f-h1 {
+    @include defineFont(7.451rem, $medium, -0.02em, 1.4);
+}
+.f-h2 {
+    @include defineFont(5.96rem, $medium, -0.02em, 1.4);
+}
+.f-h3 {
+    @include defineFont(4.768rem, $medium, -0.02em, 1.4);
+}
+.f-h4 {
+    @include defineFont(1.1vw, $medium, -0.02em, 0.8);
+    @media screen and (max-width : $breakpoint-tablet) {
+        @include defineFont(1.5vw, $medium, -0.02em, 0.8);
+
+    }
+    @media screen and (max-width : $breakpoint-mobile) {
+        @include defineFont(2.5vw, $medium, -0.02em, 0.8);
+
+    }
+}
+.f-title {
+    @include defineFont(3.052rem, $medium, -0.02em, 1.4);
+}
+.f-subtitle {
+    @include defineFont(1.563rem, $medium, -0.02em, 1.4);
+}
+.f-p {
+    @include defineFont(1rem, $medium, -0.02em, 1.6);
+}
+.f-capt {
+    @include defineFont(0.7rem, $medium, -0.02em, 1.5);
+}

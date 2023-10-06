@@ -1,0 +1,82 @@
+* {
+    font-size: $basefontsize;
+}
+html, body {
+    @include init;
+    color: $color-black;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+::-moz-selection {
+    background: $color-black;
+    color: #fff;
+ }
+ ::selection {
+    background: $color-black;
+    color: #fff;
+ }
+ ::-webkit-selection {
+    background: $color-black;
+    color: #fff;
+ }
+ 
+/* MOUSE CURSOR */
+.cursor {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(30deg);
+    pointer-events: none;
+    transition-duration: 0.3s;
+    transition-property: background-color, transform;
+    background-size: cover;
+    z-index: 10000;
+    background-color: transparent;
+    mix-blend-mode: difference;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 9px;
+    line-height: 1.2;
+    animation: spinning 2s ease-in-out infinite;
+    img {
+        display: block;
+        width: 100%;
+    }
+    &-grow--show {
+        transform: scale(4.5);
+        background-color: #fff;
+        &::after {
+            transform: scale(0.3);
+            content: "MORE";
+            display: block;
+            color: #000;
+            font-weight: 700;
+        }
+        &.blue {
+            background-color: blue;
+            &::after {
+                color: #fff;
+            }
+        }
+    }
+    &.blue {
+        background-color: blue;
+    }
+}
+@keyframes spinning {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+    
+}

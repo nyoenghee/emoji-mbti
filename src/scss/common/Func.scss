@@ -1,0 +1,47 @@
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;700&family=Karla:ital,wght@0,200;0,300;0,400;1,200;1,300&family=VT323&display=swap');
+
+/*vars*/
+$desktop : 1023px;
+$wide-desktop : 1920px;
+$breakpoint-desktop:1281px;
+$breakpoint-tablet:1281px;
+$breakpoint-mobile:800px;
+$basefontsize : 16px;
+$color-black : #000;
+$color-white : #fff;
+/*mixins*/
+
+@mixin init {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@mixin inner-80 {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin shadowbox {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-spacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*funcs*/
+
+@function toEm($px) {
+    @return math.div($px, $basefontsize) * 1em;
+}
