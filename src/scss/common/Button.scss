@@ -1,0 +1,9 @@
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    background-color: red;
+    border-radius: toEm(30px);
+    padding: toEm(8px) toEm(15px);
+}
