@@ -7,8 +7,10 @@ button {
     background-color: transparent;
     border-radius: toEm(30px);
     padding: toEm(8px) toEm(15px);
+    transition: background .3s ease-in-out;
     &:hover, &:active {
         background-color: $black;
         color: $background;
+        cursor: pointer;
     }
 }

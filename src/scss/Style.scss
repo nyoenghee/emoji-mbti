@@ -12,7 +12,7 @@
         &::after {
             position: absolute;
             left: 50%;
-            top: 35%;
+            top: 33%;
             transform: translate(-50%, -50%);
             content: '';
             display: block;
@@ -32,7 +32,10 @@
     &-desc {
         margin-top: toEm(20px);
 
-        margin-bottom: toEm(10px);
+        margin-bottom: toEm(5px);
+    }
+    &-credit {
+        margin-bottom: toEm(50px);
 
     }
 }
