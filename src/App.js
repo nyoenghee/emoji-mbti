@@ -1,3 +1,5 @@
+import '../src/scss/App.scss'
+
 function App() {
 	return (
 		<div className="main-section">
