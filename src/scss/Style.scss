@@ -1,6 +1,5 @@
 @import "./common/App";
-$background : #F5F8FF;
-$black : #001254;
+
 .section {
     color: $black;
     display: flex;
@@ -10,7 +9,18 @@ $black : #001254;
     &-main {
         background-color: $background;
         height: 100vh;
-        background: url('https://media0.giphy.com/media/TGXoYOYmVQ9v6M3g1q/giphy.gif?cid=ecf05e47jmntt71g93odqqbpcrx0tchmv2kug22uvfwsk1ft&ep=v1_gifs_gifId&rid=giphy.gif&ct=e') center center/1000px no-repeat;
+        &::after {
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            transform: translate(-50%, -50%);
+            content: '';
+            display: block;
+            width: toEm(300px);
+            height: toEm(300px);
+            background: url('https://media2.giphy.com/media/u6hSgDHvLBw8lYgIlL/giphy.gif?cid=ecf05e4736bscxwb6ecuwq0md4c74hsni56w05thxgt7ki7r&ep=v1_gifs_related&rid=giphy.gif&ct=s') center center/contain no-repeat;
+
+        }
     }
     &-title {
         font-size: toEm(30px);
@@ -20,7 +30,8 @@ $black : #001254;
         font-weight: 700;
     }
     &-desc {
-        
+        margin-top: toEm(20px);
+
         margin-bottom: toEm(10px);
 
     }
