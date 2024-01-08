@@ -256,21 +256,21 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #0D0128;
-  color: #0D0128;
+  border: 1px solid #290A6C;
+  color: #290A6C;
   background-color: transparent;
   border-radius: 1.875em;
   padding: 0.5em 0.9375em;
   transition: background 0.3s ease-in-out;
 }
 button:hover, button:active {
-  background-color: #0D0128;
+  background-color: #290A6C;
   color: #D9CEF1;
   cursor: pointer;
 }
 
 .section {
-  color: #0D0128;
+  color: #290A6C;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -295,6 +295,17 @@ button:hover, button:active {
   .section-main::after {
     top: 30%;
   }
+}
+.section-main .card {
+  position: relative;
+  color: #290A6C;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.25em;
+  width: 60%;
+  height: 18.75em;
 }
 .section-title {
   font-size: 1.5625em;
