@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;700&family=Karla:ital,wght@0,200;0,300;0,400;1,200;1,300&family=VT323&display=swap");
+/*vars*/
+/*mixins*/
+/*funcs*/
+* {
+  font-size: 16px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #000;
+  color: #fff;
+}
+
+/* MOUSE CURSOR */
+.cursor {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(30deg);
+  pointer-events: none;
+  transition-duration: 0.3s;
+  transition-property: background-color, transform;
+  background-size: cover;
+  z-index: 10000;
+  background-color: transparent;
+  mix-blend-mode: difference;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 9px;
+  line-height: 1.2;
+  animation: spinning 2s ease-in-out infinite;
+}
+.cursor img {
+  display: block;
+  width: 100%;
+}
+.cursor-grow--show {
+  transform: scale(4.5);
+  background-color: #fff;
+}
+.cursor-grow--show::after {
+  transform: scale(0.3);
+  content: "MORE";
+  display: block;
+  color: #000;
+  font-weight: 700;
+}
+.cursor-grow--show.blue {
+  background-color: blue;
+}
+.cursor-grow--show.blue::after {
+  color: #fff;
+}
+.cursor.blue {
+  background-color: blue;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.f-kv {
+  font-family: "Be Vietnam Pro";
+  font-size: 1.5vw;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 0.8;
+  vertical-align: top;
+}
+@media screen and (min-width: 1600px) {
+  .f-kv {
+    vertical-align: top;
+    font-family: "Be Vietnam Pro";
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 0.8;
+  }
+}
+@media screen and (max-width: 1281px) {
+  .f-kv {
+    vertical-align: top;
+    font-family: "Be Vietnam Pro";
+    font-size: 2.2vw;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 0.8;
+  }
+}
+@media screen and (max-width: 800px) {
+  .f-kv {
+    vertical-align: top;
+    font-family: "Be Vietnam Pro";
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 0.8;
+  }
+}
+
+.f-h1 {
+  font-family: "Be Vietnam Pro";
+  font-size: 7.451rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+@media screen and (max-width: 1281px) {
+  .f-h1 {
+    vertical-align: top;
+    font-family: "Be Vietnam Pro";
+    font-size: 1.9vw;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 0.8;
+  }
+}
+@media screen and (max-width: 800px) {
+  .f-h1 {
+    vertical-align: top;
+    font-family: "Be Vietnam Pro";
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 0.8;
+  }
+}
+
+.f-h2 {
+  font-family: "Be Vietnam Pro";
+  font-size: 5.96rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+
+.f-h3 {
+  font-family: "Be Vietnam Pro";
+  font-size: 4.768rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+
+.f-h4 {
+  font-family: "Be Vietnam Pro";
+  font-size: 1.1vw;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 0.8;
+}
+@media screen and (max-width: 1281px) {
+  .f-h4 {
+    font-family: "Be Vietnam Pro";
+    font-size: 1.5vw;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 0.8;
+  }
+}
+@media screen and (max-width: 800px) {
+  .f-h4 {
+    font-family: "Be Vietnam Pro";
+    font-size: 2.5vw;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 0.8;
+  }
+}
+
+.f-title {
+  font-family: "Be Vietnam Pro";
+  font-size: 3.052rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+@media screen and (max-width: 1281px) {
+  .f-title {
+    vertical-align: top;
+    font-family: "Be Vietnam Pro";
+    font-size: 4vw;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+  }
+}
+@media screen and (max-width: 800px) {
+  .f-title {
+    vertical-align: top;
+    font-family: "Be Vietnam Pro";
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+  }
+}
+
+.f-subtitle {
+  font-family: "Be Vietnam Pro";
+  font-size: 1.563rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+
+.f-p {
+  font-family: "Be Vietnam Pro";
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.6;
+}
+
+.f-capt {
+  font-family: "Be Vietnam Pro";
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6100FF;
+  color: #6100FF;
+  background-color: transparent;
+  border-radius: 1.875em;
+  padding: 0.5em 0.9375em;
+  transition: background 0.3s ease-in-out;
+}
+button:hover, button:active {
+  background-color: #6100FF;
+  color: #FCF5FF;
+  cursor: pointer;
+}
+
+.section {
+  color: #6100FF;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.section-main {
+  background-color: #FCF5FF;
+  height: 100vh;
+}
+.section-main::after {
+  position: absolute;
+  left: 50%;
+  top: 33%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  width: 18.75em;
+  height: 18.75em;
+  background: url("https://media2.giphy.com/media/u6hSgDHvLBw8lYgIlL/giphy.gif?cid=ecf05e4736bscxwb6ecuwq0md4c74hsni56w05thxgt7ki7r&ep=v1_gifs_related&rid=giphy.gif&ct=s") center center/contain no-repeat;
+}
+@media screen and (max-width: 800px) {
+  .section-main::after {
+    top: 30%;
+  }
+}
+.section-title {
+  font-size: 1.875em;
+  position: fixed;
+  left: 1.875em;
+  top: 0.3125em;
+  font-weight: 700;
+}
+@media screen and (max-width: 800px) {
+  .section-title {
+    left: 0.625em;
+    font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 1281px) {
+  .section-title {
+    font-size: 1.25em;
+  }
+}
+.section-desc {
+  margin-top: 1.25em;
+  word-break: keep-all;
+  margin-bottom: 0.3125em;
+}
+.section-credit {
+  margin-bottom: 3.125em;
+}/*# sourceMappingURL=Style.css.map */

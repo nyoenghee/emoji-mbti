@@ -34,6 +34,16 @@ $basefont : 'Be Vietnam Pro';
 }
 .f-h1 {
     @include defineFont(7.451rem, $medium, -0.02em, 1.4);
+    @media screen and (max-width : $breakpoint-tablet) {
+        vertical-align: top;
+        @include defineFont(1.9vw, $medium, -0.02em, 0.8);
+
+    }
+    @media screen and (max-width : $breakpoint-mobile) {
+        vertical-align: top;
+        @include defineFont(1.3rem, $medium, -0.02em, 0.8);
+
+    }
 }
 .f-h2 {
     @include defineFont(5.96rem, $medium, -0.02em, 1.4);
@@ -54,6 +64,17 @@ $basefont : 'Be Vietnam Pro';
 }
 .f-title {
     @include defineFont(3.052rem, $medium, -0.02em, 1.4);
+
+    @media screen and (max-width : $breakpoint-tablet) {
+        vertical-align: top;
+        @include defineFont(4vw, $medium, -0.02em, 1.4);
+
+    }
+    @media screen and (max-width : $breakpoint-mobile) {
+        vertical-align: top;
+        @include defineFont(2rem, $medium, -0.02em, 1.4);
+
+    }
 }
 .f-subtitle {
     @include defineFont(1.563rem, $medium, -0.02em, 1.4);

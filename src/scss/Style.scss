@@ -19,7 +19,10 @@
             width: toEm(300px);
             height: toEm(300px);
             background: url('https://media2.giphy.com/media/u6hSgDHvLBw8lYgIlL/giphy.gif?cid=ecf05e4736bscxwb6ecuwq0md4c74hsni56w05thxgt7ki7r&ep=v1_gifs_related&rid=giphy.gif&ct=s') center center/contain no-repeat;
-
+            @media screen and (max-width : $breakpoint-mobile) {
+                top: 30%;
+        
+            }
         }
     }
     &-title {
@@ -28,10 +31,18 @@
         left: toEm(30px);
         top: toEm(5px);
         font-weight: 700;
+        @media screen and (max-width : $breakpoint-mobile) {
+            left: toEm(10px);
+            font-size: toEm(20px);
+        }
+        @media screen and (max-width : $breakpoint-tablet) {
+            font-size: toEm(20px);
+    
+        }
     }
     &-desc {
         margin-top: toEm(20px);
-
+        word-break: keep-all;
         margin-bottom: toEm(5px);
     }
     &-credit {
