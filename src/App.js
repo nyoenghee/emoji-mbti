@@ -11,15 +11,11 @@ function App() {
 				</div>
 			</div>
 			<div className='emojis'>
-					{/* <img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-19.png'/> */}
-					{/* <img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-13.png'/>
-					<img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-34.png'/>
-					<img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-6.png'/>
-					<img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-11.png'/>
-					<img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-26.png'/>
-					<img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-5.png'/> */}
 					
-				</div>
+					<img alt="weather" className="weather-icon" src={`${process.env.PUBLIC_URL}/11.png`} />
+					<img alt="weather" className="weather-icon" src={`${process.env.PUBLIC_URL}/22.png`} />
+					<img alt="weather" className="weather-icon" src={`${process.env.PUBLIC_URL}/33.png`} />
+			</div>
 				<div className='credit'>20240109 jmseo, nhhong</div>
 
 			<div className='btn'>✨시작하기 ➧</div>
