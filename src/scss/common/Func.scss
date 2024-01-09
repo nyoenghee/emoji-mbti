@@ -12,7 +12,7 @@ $color-black : #000;
 $color-white : #fff;
 
 $background : #D9CEF1;
-$black : #290A6C;
+$black : #000;
 /*mixins*/
 
 @mixin init {
@@ -47,4 +47,8 @@ $black : #290A6C;
 
 @function toEm($px) {
     @return math.div($px, $basefontsize) * 1em;
+}
+
+@function toVw($value, $base: $wide-desktop) {
+    @return math.div($value, $base) * 100vw;
 }
