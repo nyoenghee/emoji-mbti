@@ -11,7 +11,7 @@ function App() {
 				</div>
 			</div>
 			<div className='emojis'>
-					<img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-19.png'/>
+					{/* <img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-19.png'/> */}
 					{/* <img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-13.png'/>
 					<img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-34.png'/>
 					<img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-6.png'/>
@@ -20,6 +20,8 @@ function App() {
 					<img src='https://d2pas86kykpvmq.cloudfront.net/img_emoji/2.0/Preview-5.png'/> */}
 					
 				</div>
+				<div className='credit'>20240109 jmseo, nhhong</div>
+
 			<div className='btn'>✨시작하기 ➧</div>
 		</div>
 	);

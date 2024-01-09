@@ -41,6 +41,15 @@
                 }
             }
         }
+        .credit {
+            color: #B4B4B4;
+            text-transform: uppercase;
+            font-size: toVw(16px);
+            font-weight: 500;
+            position: absolute;
+            bottom: toVw(31px);
+            left: toVw(31px);
+        }
         .btn {
             border-radius: 242px;
             border: 1px solid #000;
